@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Geologica", sans-serif;
+  transition: all 1s;
+}
+
+header {
+  background-color: grey;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .nav-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .nav-center h4 {
+  font-size: 2rem;
+}
+nav .nav-center h4 span {
+  color: purple;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-left: 2rem;
+}
+nav ul li + li {
+  margin-left: 1rem;
+}
+nav ul a {
+  text-decoration: none;
+  color: black;
+}
+nav ul a:hover {
+  color: rgba(255, 255, 255, 0.544);
+}
+
+main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container {
+  margin-inline: auto;
+  text-align: center;
+}
+main button {
+  all: unset;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(102, 33, 166, 0.819);
+  border-radius: 50%;
+  line-height: 200px;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  box-shadow: 10px 11px 92px 8px rgba(199, 59, 199, 0.33);
+  transition: all 1s;
+}
+main button:hover {
+  background-color: rgba(130, 44, 210, 0.819);
+  color: white;
+  box-shadow: 10px 11px 92px 8px rgba(43, 13, 43, 0.997);
+}/*# sourceMappingURL=style.css.map */

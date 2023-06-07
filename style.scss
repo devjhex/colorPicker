@@ -1,0 +1,97 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+body {
+    font-family: 'Geologica', sans-serif;
+    transition: all 1s;
+}
+
+header{
+    background-color:grey;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nav-center{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    h4{
+        font-size: 2rem;
+        span{
+            color: purple;
+        }
+    }
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin-left: 2rem;
+
+        li + li{
+            margin-left:1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: rgba(255, 255, 255, 0.544);
+        }
+    }
+}
+
+main {
+    // background-color: grey;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        margin-inline: auto;
+        text-align: center;
+    }
+    button{
+        all: unset;
+        width: 200px;
+        height:200px;
+        background-color:rgba(102, 33, 166, 0.819);
+        border-radius: 50%;
+        line-height: 200px;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        -webkit-box-shadow: 10px 11px 92px 8px rgba(199,59,199,0.64);
+        -moz-box-shadow: 10px 11px 92px 8px rgba(199,59,199,0.64);
+        box-shadow: 10px 11px 92px 8px rgba(199, 59, 199, 0.33);
+        transition: all 1s;
+    }
+    
+    button:hover{
+        background-color:rgba(130, 44, 210, 0.819) ;
+        color: white;
+        box-shadow: 10px 11px 92px 8px rgba(43, 13, 43, 0.997);
+    }
+}
